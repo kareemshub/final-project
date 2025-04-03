@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Foreign Aid Analysis</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "d3": "https://cdn.jsdelivr.net/npm/d3@7.8.5/+esm",
+                "d3-fetch": "https://cdn.jsdelivr.net/npm/d3-fetch@3.0.1/+esm"
+            }
+        }
+        </script>
+    <link rel="stylesheet" href="styles.css">
+    </style>
+</head>
+
+<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+
+<body>
+    <header>
+        <h1>USAID: Evaluating the Need for Reevaluation</h1>
+        <h2>Regional Analysis</h2>
+        <nav>
+            <a href="index.html">Back to Home</a>
+            <a href="time_periods.html">Journey Through Time</a>
+            <a href="conclusion.html">Conclusion</a>
+        </nav>
+    </header>
+</header>
+
+<main>
+    <section>
+        <h2>Trump's Plan for Reevaluation</h2>
+        <p>Since taking public office, the Trump administration has wasted no time in making major changes to decades-old foreign and domestic policy, one of which included halting all foreign aid until further notice. This project aims to assess the necessity and implications of this decision. The United States has historically been one of the largest contributors to foreign aid globally, providing financial assistance for humanitarian efforts, economic development, and geopolitical stability.</p>
+        <p>By analyzing the U.S. government’s publicly available foreign income dataset, this research will explore historical trends in foreign aid allocation across different regions, funding groups, and time periods. Foreign aid plays a crucial role in diplomacy, disaster relief, and economic growth in developing nations. However, recent political shifts have raised questions about its sustainability and strategic importance.</p>
+        <p>This study will also examine how U.S. foreign aid spending compares to other government expenditures, evaluating whether the recent cuts were financially justified or politically motivated. Through visual data analysis, we aim to present a comprehensive picture of how aid reductions impact recipient countries and international relations.</p>
+    </section>
+
+    <section>
+        <h2>Visualizations</h2>
+        <div class="visualization-container">
+            <div class="chart" id="viz1">
+                <iframe src="regionscatter.html" width="100%" height="600"></iframe>
+            </div>
+            <div class="chart-description">
+                <p>This interactive visualization reveals trends in US foreign aid allocation to three key regions (East Asia & Oceania, Europe & Eurasia, and South & Central Asia) over time. The logarithmic y-axis allows comparison of aid amounts across different orders of magnitude, while the interactive selection highlights one region at a time for clearer analysis. Key takeaways include the significant increase in aid to Europe/Eurasia post-1990, the steady support for South/Central Asia since 2001, and the relative consistency of aid to East Asia/Oceania. However, in recent years, there is a significant decrease in aid for the South/Central Asia Region and East Asia/Oceania. Users can click the radio buttons to focus on specific regional trends. </body>
+                 </div>
+            <div class="chart" id="viz2">
+                <iframe src="Total USAID by Year (interactive).html" width="100%" height="600"></iframe>
+            </div>
+            <div class="chart-description">
+                <p> The data reveals significant shifts in both regional allocation and sectoral focus of U.S. foreign aid between 2014 and 2025. In 2014, the largest portion of aid went to South & Central Asia, likely supporting health initiatives and infrastructure development, followed by Europe & Eurasia where governance programs and economic reforms were probable priorities. By 2025, Europe & Eurasia emerged as the primary recipient, suggesting increased funding for security assistance and energy sector development, while South & Central Asia saw relative reductions. The aid expansion to $9 billion indicates broader sectoral investments, potentially encompassing education, climate resilience, and technology partnerships across all regions. </body>
+                 </div>
+            
+        </div>
+    </section>
+</main>
+</body>
+</html>
